@@ -108,3 +108,31 @@ while True:
         print(num_1 * num_2)
     else:
         print("Operador invalido!")
+
+"""WHILE / ELSE - AULA 8
+Contadores
+Acumuladores
+"""
+#!CONTADOR
+contador = 0 #pode começar a partir de qualquer número, ex: contador = 50
+
+# while contador <= 100:
+#     print(contador)
+#     contador += 1
+
+#!ACUMULADOR
+contador_1 = 1
+acumulador = 1
+
+while contador_1 <= 10:
+    print(contador_1, acumulador)
+    
+    if contador_1 > 5:
+        break #TODO: quando colocamos o BREAK o ELSE não será executado, ele sai do bloco de código
+
+    acumulador = acumulador + contador_1
+    contador_1 += 1
+else:
+    print("Cheguei no else.")
+print("Isso será executado!")
+
